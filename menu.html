@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>MENU WACKOMARIA</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="icon" href="favicon.ico.ico">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="js/test.js" async></script>
+    </head>
+    <script>
+        function test2(){
+           let result = confirm("かっこいい服を購入しますか");
+            if(result){
+                console.log("かっこいい服を購入しました。");
+            }
+            else{
+                console.log("購入をキャンセルしました。");
+            }
+        }
+
+        function test3(){
+           let result = confirm("かわいい服を購入しますか");
+            if(result){
+                console.log("かわいい服を購入しました。");
+            }
+            else{
+                console.log("購入をキャンセルしました。");
+            }
+        }
+
+        function test4(){
+           let result = confirm("いぶし銀な服を購入しますか");
+            if(result){
+                console.log("いぶし銀な服を購入しました。");
+            }
+            else{
+                console.log("購入をキャンセルしました。");
+            }
+        }
+
+        function test5(){
+           let result = confirm("ユニークな服を購入しますか");
+            if(result){
+                console.log("ユニークな服を購入しました。");
+            }
+            else{
+                console.log("購入をキャンセルしました。");
+            }
+        }
+    </script>
+<body>
+    <header>
+        <div class="logo">
+            <a href="wackomaria.html">
+                <img src="./wackologo.jpg" alt="logo">
+            </a>
+        </div>
+    </header>
+        
+        <div class="container">
+            <div class="item"><img src="./1.jpg"  alt="cardigan1"></div>
+                <p class="item">かっこいい服<br>WACKOMARIA<br>$10000000
+                <br><button onclick="test2()" type="submit" value="send">購入</button></p>
+            <div class="item"><img src="./2.jpg"  alt="cardigan2"></div>
+                <p class="item">かわいい服<br>WACKOMARIA<br>$20000000
+                <br><button onClick="test3()" type="submit" value="send">購入</button></p>
+            <div class="item"><img src="./3.jpeg"  alt="cardigan3"></div>
+                <p class="item">いぶし銀な服<br>WACKOMARIA<br>$30000000
+                <br><button onClick="test4()" type="submit" value="send">購入</button></p>
+            <div class="item"><img src="./4.jpg"  alt="cardigan4"></div>
+                <p class="item">ユニークな服<br>WACKOMARIA<br>$40000000
+                <br><button onClick="test5()" type="submit" value="send">購入</button></p>
+        </div>
+    <footer>
+        <small>
+            @ 2022 example.com
+
+        </small>
+    </footer>
+
+</body>
+</html>
